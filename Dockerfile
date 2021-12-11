@@ -2,4 +2,4 @@ FROM node:16
 
 
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["yarn", "start"]

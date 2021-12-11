@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+
+
+body {
+	background-color: #fff;
+}
+
+.map {
+	margin: 1em;
+}
+
+.line {
+	float: left;
+	clear: both;
+}
+
+.line:last-child {
+}
+
+.cell {
+	float: left;
+	height: 1em;
+	width: 1em;
+	border-collapse: collapse;
+}
+
+.line:nth-child(2n) .cell:not(.wall):nth-child(2n) {
+	background-color: #f5f5f5;
+}
+.line:nth-child(2n) .cell:not(.wall):nth-child(2n+1) {
+	background-color: #fff;
+}
+
+.line:nth-child(2n+1) .cell:not(.wall):nth-child(2n) {
+	background-color: #fff;
+}
+.line:nth-child(2n+1) .cell:not(.wall):nth-child(2n+1) {
+	background-color: #f5f5f5;
+}
+
+
+.line .cell.wall {
+	background-color: #bbb;
+}
+
+.line .cell.players {
+	background-color: red;
+}
+
