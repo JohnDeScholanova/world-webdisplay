@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  world-display:
+    build:
+      context: .
+    restart: "unless-stopped"
+    volumes:
+      - ".:/app:rw"
+    ports:
+      - "3000:3000"
